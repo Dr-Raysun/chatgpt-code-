@@ -1,0 +1,7 @@
+import Link from "next/link";
+import { getEnrollments } from "@/actions/enrollment.actions";
+import { DeleteEnrollmentButton, UpdateEnrollmentStatusForm } from "@/components/enrollments/EnrollmentControls";
+
+const badgeClass: Record<string, string> = { active: "bg-green-100 text-green-700", completed: "bg-blue-100 text-blue-700", dropped: "bg-red-100 text-red-700" };
+
+export default async function EnrollmentsPage() { const enrollments = await getEnrollments(); return <section className="mx-auto max-w-6xl px-6 py-10"><div className="mb-6 flex items-center justify-between"><h1 className="text-3xl font-bold">Enrollments</h1><Link href="/enrollments/new" className="rounded-md bg-blue-600 px-4 py-2 text-sm font-semibold text-white">New Enrollment</Link></div><div className="space-y-3">{enrollments.length === 0 ? <div className="rounded-xl border bg-white p-6 text-slate-600">No enrollments yet.</div> : enrollments.map((e: any) => <div key={e._id} className="grid gap-4 rounded-xl border bg-white p-5 shadow-sm md:grid-cols-[1fr_1fr_auto_auto]"><div><p className="text-sm text-slate-500">Student</p><p className="font-semibold">{e.student?.name}</p></div><div><p className="text-sm text-slate-500">Course</p><p className="font-semibold">{e.course?.code} — {e.course?.title}</p></div><span className={`h-fit rounded-full px-3 py-1 text-xs font-semibold capitalize ${badgeClass[e.status]}`}>{e.status}</span><div className="flex gap-2"><UpdateEnrollmentStatusForm id={e._id} status={e.status} /><DeleteEnrollmentButton id={e._id} /></div></div>)}</div></section>; }

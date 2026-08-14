@@ -1,0 +1,9 @@
+import Link from "next/link";
+import { getStudentById } from "@/actions/student.actions";
+import { getEnrollmentsByStudent } from "@/actions/enrollment.actions";
+import { DeleteEnrollmentButton } from "@/components/enrollments/EnrollmentControls";
+
+export default async function StudentDetailPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params; const student = await getStudentById(id); const enrollments = await getEnrollmentsByStudent(id);
+  return <section className="mx-auto max-w-6xl px-6 py-10"><div className="mb-6 flex justify-between"><div><h1 className="text-3xl font-bold">{student.name}</h1><p className="text-slate-600">{student.email}</p></div><Link href="/enrollments/new" className="rounded-md bg-blue-600 px-4 py-2 text-sm font-semibold text-white">Add Enrollment</Link></div><div className="rounded-xl border bg-white p-6 shadow-sm"><h2 className="mb-4 text-xl font-semibold">Enrolled courses</h2>{enrollments.length === 0 ? <p className="text-slate-600">No courses yet.</p> : <div className="space-y-3">{enrollments.map((e: any) => <div key={e._id} className="flex items-center justify-between rounded-lg border p-4"><div><p className="font-medium">{e.course?.code} — {e.course?.title}</p><p className="text-sm capitalize text-slate-600">{e.status}</p></div><DeleteEnrollmentButton id={e._id} /></div>)}</div>}</div></section>;
+}
