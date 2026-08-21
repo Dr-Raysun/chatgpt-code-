@@ -120,7 +120,6 @@ export async function updateEnrollmentStatus(id: string, formData: FormData) {
   await connectToDatabase();
 
   const enrollment = await Enrollment.findByIdAndUpdate(id, { status }, { new: true });
-
   if (enrollment) {
     revalidatePath(`/students/${enrollment.student}`);
     revalidatePath(`/courses/${enrollment.course}`);
@@ -142,7 +141,6 @@ export async function deleteEnrollment(id: string) {
   await connectToDatabase();
 
   const enrollment = await Enrollment.findByIdAndDelete(id);
-
   if (enrollment) {
     revalidatePath(`/students/${enrollment.student}`);
     revalidatePath(`/courses/${enrollment.course}`);

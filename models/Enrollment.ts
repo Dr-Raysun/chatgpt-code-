@@ -1,5 +1,6 @@
 import { model, models, Schema, Types, type InferSchemaType } from "mongoose";
 
+
 /**
  * Enrollment is the join collection for the many-to-many relationship.
  *
@@ -40,12 +41,19 @@ const EnrollmentSchema = new Schema(
      * reason a join collection is more useful than two arrays: the relationship
      * itself can carry its own fields.
      */
+
+const EnrollmentSchema = new Schema(
+  {
+    student: { type: Types.ObjectId, ref: "Student", required: true },
+    course: { type: Types.ObjectId, ref: "Course", required: true },
+
     status: {
       type: String,
       enum: ["active", "completed", "dropped"],
       default: "active",
       required: true,
     },
+
 
     /**
      * Another relationship-specific field.
@@ -54,10 +62,12 @@ const EnrollmentSchema = new Schema(
      * belong only to Student or only to Course; it belongs to the connection
      * between them, so it lives on Enrollment.
      */
+
     enrolledAt: { type: Date, default: Date.now, required: true },
   },
   { timestamps: true },
 );
+
 
 /**
  * Protect the many-to-many pair from duplicates.
@@ -73,6 +83,7 @@ const EnrollmentSchema = new Schema(
  * So the pair `{ student, course }` is unique, while each individual field can
  * still appear many times across the collection.
  */
+
 EnrollmentSchema.index({ student: 1, course: 1 }, { unique: true });
 
 export type EnrollmentDocument = InferSchemaType<typeof EnrollmentSchema> & { _id: string };
@@ -84,6 +95,7 @@ export type EnrollmentDocument = InferSchemaType<typeof EnrollmentSchema> & { _i
  * prevents Mongoose from throwing an overwrite error when the schema is already
  * registered.
  */
+
 const Enrollment = models.Enrollment || model("Enrollment", EnrollmentSchema);
 
 export default Enrollment;

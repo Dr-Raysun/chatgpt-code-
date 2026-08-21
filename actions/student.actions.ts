@@ -41,6 +41,7 @@ export async function updateStudent(id: string, formData: FormData) {
   redirect(`/students/${id}`);
 }
 
+
 /**
  * Delete a Student and then remove all join rows that point to it.
  *
@@ -55,7 +56,11 @@ export async function deleteStudent(id: string) {
   // Clean up every Student -> Course relationship for this student.
   await Enrollment.deleteMany({ student: id });
 
-  // Now remove the parent document itself.
+  // Now remove the parent document itself
+export async function deleteStudent(id: string) {
+  objectIdSchema.parse(id);
+  await connectToDatabase();
+  await Enrollment.deleteMany({ student: id });
   await Student.findByIdAndDelete(id);
   revalidatePath("/students");
   revalidatePath("/enrollments");
