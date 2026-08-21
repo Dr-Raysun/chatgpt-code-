@@ -41,10 +41,21 @@ export async function updateCourse(id: string, formData: FormData) {
   redirect(`/courses/${id}`);
 }
 
+/**
+ * Delete a Course and then remove all join rows that point to it.
+ *
+ * The Enrollment collection is the source of truth for Student <-> Course
+ * relationships. When a Course is removed, its relationship rows must be
+ * removed too so no Enrollment points at a missing Course.
+ */
 export async function deleteCourse(id: string) {
   objectIdSchema.parse(id);
   await connectToDatabase();
+
+  // Clean up every Student -> Course relationship for this course.
   await Enrollment.deleteMany({ course: id });
+
+  // Now remove the parent document itself.
   await Course.findByIdAndDelete(id);
   revalidatePath("/courses");
   revalidatePath("/enrollments");

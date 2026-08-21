@@ -41,6 +41,22 @@ export async function updateStudent(id: string, formData: FormData) {
   redirect(`/students/${id}`);
 }
 
+
+/**
+ * Delete a Student and then remove all join rows that point to it.
+ *
+ * A many-to-many relationship has independent Enrollment documents. If the
+ * Student goes away, those relationship rows would become dangling references,
+ * so we delete the matching Enrollment rows before deleting the parent Student.
+ */
+export async function deleteStudent(id: string) {
+  objectIdSchema.parse(id);
+  await connectToDatabase();
+
+  // Clean up every Student -> Course relationship for this student.
+  await Enrollment.deleteMany({ student: id });
+
+  // Now remove the parent document itself
 export async function deleteStudent(id: string) {
   objectIdSchema.parse(id);
   await connectToDatabase();
