@@ -1,0 +1,55 @@
+{
+  "node": {
+    "0065022f07a160a7525ea7f43f5a1d0a12a0a6f07a": {
+      "workers": {
+        "app/students/new/page": {
+          "moduleId": 39566,
+          "async": false
+        }
+      },
+      "exportedName": "getStudents",
+      "filename": "actions/student.actions.ts"
+    },
+    "40139223aebc768d19cc5d3b60d298e5927a1397af": {
+      "workers": {
+        "app/students/new/page": {
+          "moduleId": 39566,
+          "async": false
+        }
+      },
+      "exportedName": "deleteStudent",
+      "filename": "actions/student.actions.ts"
+    },
+    "406c91da3d34bc759759cfd70dcc6be99b2d62b044": {
+      "workers": {
+        "app/students/new/page": {
+          "moduleId": 39566,
+          "async": false
+        }
+      },
+      "exportedName": "createStudent",
+      "filename": "actions/student.actions.ts"
+    },
+    "40e20f2554f30191fc25162bb96659cd3b5862864d": {
+      "workers": {
+        "app/students/new/page": {
+          "moduleId": 39566,
+          "async": false
+        }
+      },
+      "exportedName": "getStudentById",
+      "filename": "actions/student.actions.ts"
+    },
+    "60c1026b912656c8bb13456154c13440e333ba5f91": {
+      "workers": {
+        "app/students/new/page": {
+          "moduleId": 39566,
+          "async": false
+        }
+      },
+      "exportedName": "updateStudent",
+      "filename": "actions/student.actions.ts"
+    }
+  },
+  "edge": {}
+}

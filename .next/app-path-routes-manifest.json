@@ -1,0 +1,15 @@
+{
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/courses/[id]/edit/page": "/courses/[id]/edit",
+  "/courses/[id]/page": "/courses/[id]",
+  "/courses/new/page": "/courses/new",
+  "/courses/page": "/courses",
+  "/enrollments/new/page": "/enrollments/new",
+  "/enrollments/page": "/enrollments",
+  "/page": "/",
+  "/students/[id]/edit/page": "/students/[id]/edit",
+  "/students/[id]/page": "/students/[id]",
+  "/students/new/page": "/students/new",
+  "/students/page": "/students"
+}

@@ -1,0 +1,65 @@
+{
+  "node": {
+    "009bf5d723d8d00ca4e2c1404491124b03f0784790": {
+      "workers": {
+        "app/enrollments/page": {
+          "moduleId": 37812,
+          "async": false
+        }
+      },
+      "exportedName": "getEnrollments",
+      "filename": "actions/enrollment.actions.ts"
+    },
+    "400bfac682f811b076d144d200f104d25a4f8fc3dd": {
+      "workers": {
+        "app/enrollments/page": {
+          "moduleId": 37812,
+          "async": false
+        }
+      },
+      "exportedName": "createEnrollment",
+      "filename": "actions/enrollment.actions.ts"
+    },
+    "401094f970b3b7d354f4e9b2f7bd0fc725e978e6d2": {
+      "workers": {
+        "app/enrollments/page": {
+          "moduleId": 37812,
+          "async": false
+        }
+      },
+      "exportedName": "deleteEnrollment",
+      "filename": "actions/enrollment.actions.ts"
+    },
+    "408b63aadb140a1e31b09755fa1b44b5b747394f45": {
+      "workers": {
+        "app/enrollments/page": {
+          "moduleId": 37812,
+          "async": false
+        }
+      },
+      "exportedName": "getEnrollmentsByCourse",
+      "filename": "actions/enrollment.actions.ts"
+    },
+    "40f4dde2c4491de89098ec08f09183e5960cf97731": {
+      "workers": {
+        "app/enrollments/page": {
+          "moduleId": 37812,
+          "async": false
+        }
+      },
+      "exportedName": "getEnrollmentsByStudent",
+      "filename": "actions/enrollment.actions.ts"
+    },
+    "605011ea422bd3480910e7d046e8708fd22a2506e8": {
+      "workers": {
+        "app/enrollments/page": {
+          "moduleId": 37812,
+          "async": false
+        }
+      },
+      "exportedName": "updateEnrollmentStatus",
+      "filename": "actions/enrollment.actions.ts"
+    }
+  },
+  "edge": {}
+}

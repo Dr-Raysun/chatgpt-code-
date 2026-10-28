@@ -1,0 +1,115 @@
+{
+  "node": {
+    "00d439b2be04e37007f24949342020127ea106fb64": {
+      "workers": {
+        "app/courses/[id]/page": {
+          "moduleId": 21521,
+          "async": false
+        }
+      },
+      "exportedName": "getCourses",
+      "filename": "actions/course.actions.ts"
+    },
+    "40752d7ec76690b718dbea6526667df7122bd03ccf": {
+      "workers": {
+        "app/courses/[id]/page": {
+          "moduleId": 21521,
+          "async": false
+        }
+      },
+      "exportedName": "deleteCourse",
+      "filename": "actions/course.actions.ts"
+    },
+    "40bacbc49c0df1f652a01e0b988e046c677329702b": {
+      "workers": {
+        "app/courses/[id]/page": {
+          "moduleId": 21521,
+          "async": false
+        }
+      },
+      "exportedName": "getCourseById",
+      "filename": "actions/course.actions.ts"
+    },
+    "40bf696a5c21247b254867d1bfb26859781cb248fe": {
+      "workers": {
+        "app/courses/[id]/page": {
+          "moduleId": 21521,
+          "async": false
+        }
+      },
+      "exportedName": "createCourse",
+      "filename": "actions/course.actions.ts"
+    },
+    "60c1937fc899103d5db3027c5aeb63b210f8e98132": {
+      "workers": {
+        "app/courses/[id]/page": {
+          "moduleId": 21521,
+          "async": false
+        }
+      },
+      "exportedName": "updateCourse",
+      "filename": "actions/course.actions.ts"
+    },
+    "009bf5d723d8d00ca4e2c1404491124b03f0784790": {
+      "workers": {
+        "app/courses/[id]/page": {
+          "moduleId": 21521,
+          "async": false
+        }
+      },
+      "exportedName": "getEnrollments",
+      "filename": "actions/enrollment.actions.ts"
+    },
+    "400bfac682f811b076d144d200f104d25a4f8fc3dd": {
+      "workers": {
+        "app/courses/[id]/page": {
+          "moduleId": 21521,
+          "async": false
+        }
+      },
+      "exportedName": "createEnrollment",
+      "filename": "actions/enrollment.actions.ts"
+    },
+    "401094f970b3b7d354f4e9b2f7bd0fc725e978e6d2": {
+      "workers": {
+        "app/courses/[id]/page": {
+          "moduleId": 21521,
+          "async": false
+        }
+      },
+      "exportedName": "deleteEnrollment",
+      "filename": "actions/enrollment.actions.ts"
+    },
+    "408b63aadb140a1e31b09755fa1b44b5b747394f45": {
+      "workers": {
+        "app/courses/[id]/page": {
+          "moduleId": 21521,
+          "async": false
+        }
+      },
+      "exportedName": "getEnrollmentsByCourse",
+      "filename": "actions/enrollment.actions.ts"
+    },
+    "40f4dde2c4491de89098ec08f09183e5960cf97731": {
+      "workers": {
+        "app/courses/[id]/page": {
+          "moduleId": 21521,
+          "async": false
+        }
+      },
+      "exportedName": "getEnrollmentsByStudent",
+      "filename": "actions/enrollment.actions.ts"
+    },
+    "605011ea422bd3480910e7d046e8708fd22a2506e8": {
+      "workers": {
+        "app/courses/[id]/page": {
+          "moduleId": 21521,
+          "async": false
+        }
+      },
+      "exportedName": "updateEnrollmentStatus",
+      "filename": "actions/enrollment.actions.ts"
+    }
+  },
+  "edge": {}
+}

@@ -16,34 +16,6 @@ import { model, models, Schema, Types, type InferSchemaType } from "mongoose";
  */
 const EnrollmentSchema = new Schema(
   {
-    /**
-     * The left side of the relationship.
-     *
-     * `Types.ObjectId` stores the MongoDB id of a Student document. The `ref`
-     * value tells Mongoose which model to use when we call `.populate("student")`
-     * in the server actions.
-     */
-    student: { type: Types.ObjectId, ref: "Student", required: true },
-
-    /**
-     * The right side of the relationship.
-     *
-     * This field points at a Course document. A different Enrollment document can
-     * reuse the same course id with another student id, which is what allows many
-     * students to join the same course.
-     */
-    course: { type: Types.ObjectId, ref: "Course", required: true },
-
-    /**
-     * Relationship-specific data belongs on the join collection.
-     *
-     * Status describes the student's membership in this course. This is the key
-     * reason a join collection is more useful than two arrays: the relationship
-     * itself can carry its own fields.
-     */
-
-const EnrollmentSchema = new Schema(
-  {
     student: { type: Types.ObjectId, ref: "Student", required: true },
     course: { type: Types.ObjectId, ref: "Course", required: true },
 

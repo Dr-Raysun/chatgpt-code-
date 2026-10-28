@@ -1,0 +1,15 @@
+{
+  "/_global-error/page": "app/_global-error/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/courses/[id]/edit/page": "app/courses/[id]/edit/page.js",
+  "/courses/[id]/page": "app/courses/[id]/page.js",
+  "/courses/new/page": "app/courses/new/page.js",
+  "/courses/page": "app/courses/page.js",
+  "/enrollments/new/page": "app/enrollments/new/page.js",
+  "/enrollments/page": "app/enrollments/page.js",
+  "/page": "app/page.js",
+  "/students/[id]/edit/page": "app/students/[id]/edit/page.js",
+  "/students/[id]/page": "app/students/[id]/page.js",
+  "/students/new/page": "app/students/new/page.js",
+  "/students/page": "app/students/page.js"
+}

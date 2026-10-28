@@ -1,0 +1,55 @@
+{
+  "node": {
+    "00d43902339e89d7957c1c4ed95d450a5fc41200eb": {
+      "workers": {
+        "app/students/page": {
+          "moduleId": "[project]/.next-internal/server/app/students/page/actions.js { ACTIONS_MODULE0 => \"[project]/actions/student.actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "exportedName": "getStudents",
+      "filename": "actions/student.actions.ts"
+    },
+    "404add29fcbf99c24a383e5cf29d8779ced3d1122a": {
+      "workers": {
+        "app/students/page": {
+          "moduleId": "[project]/.next-internal/server/app/students/page/actions.js { ACTIONS_MODULE0 => \"[project]/actions/student.actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "exportedName": "createStudent",
+      "filename": "actions/student.actions.ts"
+    },
+    "4079200ab78d54b252f6aa1f7bfba3e38b5d6720eb": {
+      "workers": {
+        "app/students/page": {
+          "moduleId": "[project]/.next-internal/server/app/students/page/actions.js { ACTIONS_MODULE0 => \"[project]/actions/student.actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "exportedName": "getStudentById",
+      "filename": "actions/student.actions.ts"
+    },
+    "40beeb9b1ddae674c6856f0a595dd820bc94aebe97": {
+      "workers": {
+        "app/students/page": {
+          "moduleId": "[project]/.next-internal/server/app/students/page/actions.js { ACTIONS_MODULE0 => \"[project]/actions/student.actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "exportedName": "deleteStudent",
+      "filename": "actions/student.actions.ts"
+    },
+    "6021d61ebb6b102b0d73f749886bf445606b2819d6": {
+      "workers": {
+        "app/students/page": {
+          "moduleId": "[project]/.next-internal/server/app/students/page/actions.js { ACTIONS_MODULE0 => \"[project]/actions/student.actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "exportedName": "updateStudent",
+      "filename": "actions/student.actions.ts"
+    }
+  },
+  "edge": {}
+}

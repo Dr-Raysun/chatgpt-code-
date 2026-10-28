@@ -1,0 +1,115 @@
+{
+  "node": {
+    "0065022f07a160a7525ea7f43f5a1d0a12a0a6f07a": {
+      "workers": {
+        "app/students/[id]/page": {
+          "moduleId": 63064,
+          "async": false
+        }
+      },
+      "exportedName": "getStudents",
+      "filename": "actions/student.actions.ts"
+    },
+    "40139223aebc768d19cc5d3b60d298e5927a1397af": {
+      "workers": {
+        "app/students/[id]/page": {
+          "moduleId": 63064,
+          "async": false
+        }
+      },
+      "exportedName": "deleteStudent",
+      "filename": "actions/student.actions.ts"
+    },
+    "406c91da3d34bc759759cfd70dcc6be99b2d62b044": {
+      "workers": {
+        "app/students/[id]/page": {
+          "moduleId": 63064,
+          "async": false
+        }
+      },
+      "exportedName": "createStudent",
+      "filename": "actions/student.actions.ts"
+    },
+    "40e20f2554f30191fc25162bb96659cd3b5862864d": {
+      "workers": {
+        "app/students/[id]/page": {
+          "moduleId": 63064,
+          "async": false
+        }
+      },
+      "exportedName": "getStudentById",
+      "filename": "actions/student.actions.ts"
+    },
+    "60c1026b912656c8bb13456154c13440e333ba5f91": {
+      "workers": {
+        "app/students/[id]/page": {
+          "moduleId": 63064,
+          "async": false
+        }
+      },
+      "exportedName": "updateStudent",
+      "filename": "actions/student.actions.ts"
+    },
+    "009bf5d723d8d00ca4e2c1404491124b03f0784790": {
+      "workers": {
+        "app/students/[id]/page": {
+          "moduleId": 63064,
+          "async": false
+        }
+      },
+      "exportedName": "getEnrollments",
+      "filename": "actions/enrollment.actions.ts"
+    },
+    "400bfac682f811b076d144d200f104d25a4f8fc3dd": {
+      "workers": {
+        "app/students/[id]/page": {
+          "moduleId": 63064,
+          "async": false
+        }
+      },
+      "exportedName": "createEnrollment",
+      "filename": "actions/enrollment.actions.ts"
+    },
+    "401094f970b3b7d354f4e9b2f7bd0fc725e978e6d2": {
+      "workers": {
+        "app/students/[id]/page": {
+          "moduleId": 63064,
+          "async": false
+        }
+      },
+      "exportedName": "deleteEnrollment",
+      "filename": "actions/enrollment.actions.ts"
+    },
+    "408b63aadb140a1e31b09755fa1b44b5b747394f45": {
+      "workers": {
+        "app/students/[id]/page": {
+          "moduleId": 63064,
+          "async": false
+        }
+      },
+      "exportedName": "getEnrollmentsByCourse",
+      "filename": "actions/enrollment.actions.ts"
+    },
+    "40f4dde2c4491de89098ec08f09183e5960cf97731": {
+      "workers": {
+        "app/students/[id]/page": {
+          "moduleId": 63064,
+          "async": false
+        }
+      },
+      "exportedName": "getEnrollmentsByStudent",
+      "filename": "actions/enrollment.actions.ts"
+    },
+    "605011ea422bd3480910e7d046e8708fd22a2506e8": {
+      "workers": {
+        "app/students/[id]/page": {
+          "moduleId": 63064,
+          "async": false
+        }
+      },
+      "exportedName": "updateEnrollmentStatus",
+      "filename": "actions/enrollment.actions.ts"
+    }
+  },
+  "edge": {}
+}

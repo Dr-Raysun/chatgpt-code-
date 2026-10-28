@@ -1,0 +1,65 @@
+{
+  "node": {
+    "00bd0cd7bfe7c12785a9b27d4126cf5c06c987beba": {
+      "workers": {
+        "app/enrollments/page": {
+          "moduleId": "[project]/.next-internal/server/app/enrollments/page/actions.js { ACTIONS_MODULE0 => \"[project]/actions/enrollment.actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "exportedName": "getEnrollments",
+      "filename": "actions/enrollment.actions.ts"
+    },
+    "40476bb4a3ea3a4f72811132300e20ae1e4399ea78": {
+      "workers": {
+        "app/enrollments/page": {
+          "moduleId": "[project]/.next-internal/server/app/enrollments/page/actions.js { ACTIONS_MODULE0 => \"[project]/actions/enrollment.actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "exportedName": "getEnrollmentsByStudent",
+      "filename": "actions/enrollment.actions.ts"
+    },
+    "408656f97a18d629f2fffebd9749d2f193e2eac2df": {
+      "workers": {
+        "app/enrollments/page": {
+          "moduleId": "[project]/.next-internal/server/app/enrollments/page/actions.js { ACTIONS_MODULE0 => \"[project]/actions/enrollment.actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "exportedName": "deleteEnrollment",
+      "filename": "actions/enrollment.actions.ts"
+    },
+    "409a60726bc77856ab41130c23d2388746607dafbe": {
+      "workers": {
+        "app/enrollments/page": {
+          "moduleId": "[project]/.next-internal/server/app/enrollments/page/actions.js { ACTIONS_MODULE0 => \"[project]/actions/enrollment.actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "exportedName": "getEnrollmentsByCourse",
+      "filename": "actions/enrollment.actions.ts"
+    },
+    "40cc5d2d4f25d05dc404b83d147d159d7de93d437c": {
+      "workers": {
+        "app/enrollments/page": {
+          "moduleId": "[project]/.next-internal/server/app/enrollments/page/actions.js { ACTIONS_MODULE0 => \"[project]/actions/enrollment.actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "exportedName": "createEnrollment",
+      "filename": "actions/enrollment.actions.ts"
+    },
+    "601ece719a0c981bdf12a87abfcdb020f8cb945190": {
+      "workers": {
+        "app/enrollments/page": {
+          "moduleId": "[project]/.next-internal/server/app/enrollments/page/actions.js { ACTIONS_MODULE0 => \"[project]/actions/enrollment.actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "exportedName": "updateEnrollmentStatus",
+      "filename": "actions/enrollment.actions.ts"
+    }
+  },
+  "edge": {}
+}
