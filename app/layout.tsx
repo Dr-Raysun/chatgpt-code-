@@ -20,7 +20,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       <body className="min-h-screen bg-slate-50 text-slate-900 antialiased">
         <header className="border-b border-slate-200 bg-white">
           <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-            <Link href="/" className="text-lg font-bold text-slate-950">Many-to-Many CRUD</Link>
+            <Link href="/" className="text-lg font-bold text-slate-950">Many-to-Many CRUD operation</Link>
             <div className="flex gap-3 text-sm font-medium text-slate-600">
               {navItems.map((item) => (
                 <Link key={item.href} href={item.href} className="rounded-md px-3 py-2 hover:bg-slate-100 hover:text-slate-950">

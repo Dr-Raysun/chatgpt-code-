@@ -12,7 +12,7 @@ export default function Home() {
     <section className="mx-auto max-w-6xl px-6 py-12">
       <div className="mb-8">
         <p className="text-sm font-semibold uppercase tracking-wide text-blue-600">Server Actions + Mongoose</p>
-        <h1 className="mt-2 text-4xl font-bold">Many-to-many CRUD demo</h1>
+        <h1 className="mt-2 text-4xl font-bold">Many-to-many CRUD demo learning </h1>
         <p className="mt-3 max-w-2xl text-slate-600">
           Learn CRUD with Students, Courses, and Enrollment records that model the relationship between them Again.
         </p>
