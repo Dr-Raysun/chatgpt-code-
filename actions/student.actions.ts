@@ -4,13 +4,15 @@ import { revalidatePath } from "next/cache";
 import { notFound, redirect } from "next/navigation";
 import { connectToDatabase } from "@/lib/db";
 import { serializeDocument } from "@/lib/serialize";
+import { buildSearchFilter } from "@/lib/search";
 import { objectIdSchema, studentSchema } from "@/lib/validations";
 import Enrollment from "@/models/Enrollment";
 import Student from "@/models/Student";
 
-export async function getStudents() {
+export async function getStudents(search?: string) {
   await connectToDatabase();
-  const students = await Student.find().sort({ createdAt: -1 }).lean();
+  const filter = buildSearchFilter(search, ["name", "email"]);
+  const students = await Student.find(filter).sort({ createdAt: -1 }).lean();
   return serializeDocument(students);
 }
 
